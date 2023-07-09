@@ -1,0 +1,19 @@
+#cloud-config
+
+# username: example
+# password: example
+
+users:
+  - name: example
+    gecos: Lab
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    groups: sudo
+    shell: /bin/bash
+    passwd: $y$j9T$9DhCk0k1Lk7Tdu/fWHoxo/$Qj5Nbx3O.ck/BaXJ4lt9MG0zVrRCxmXh3yZLtJFJj8.
+    lock_passwd: false
+timezone: US/Mountain
+package_upgrade: true
+packages:
+- ca-certificates
+- curl
+ssh_pwauth: true

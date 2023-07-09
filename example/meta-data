@@ -1,0 +1,4 @@
+#cloud-config
+
+instance-id: example
+local-hostname: example
